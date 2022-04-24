@@ -26,7 +26,7 @@ ul>li{
 body{
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
-    grid-template-rows: 1fr 5.5fr;
+    grid-template-rows: 1fr 7fr;
 }
 
 .sidebar{
@@ -34,14 +34,16 @@ body{
     grid-row: 1 / 3;
     padding: 1rem;
     color: var(--white);
+    font-size: 1.2rem;
 }
 
 h1{
     font-size: 1.7rem;
 }
 
-.options{
+.options, .support{
     margin: 3rem 0 4rem 0;
+    font-size: 1.3rem;
 }
 
 .header{
@@ -54,7 +56,7 @@ h1{
 .upper, .lower{
     display: flex;
     padding: .3rem;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 #search{
@@ -97,7 +99,7 @@ h1{
     align-items: center;
     width: 8rem;
     background-color: var(--blue);
-    color: #fff;
+    color: var(--white);
     border-radius: 450px;
 }
 
@@ -105,7 +107,7 @@ h1{
     background-color: var(--grey);
 }
 
-.projects>h2{
+h2{
     padding: 1.2rem;
     font-size: 1.2rem;
 }
@@ -121,15 +123,42 @@ h1{
     background-color: var(--white);
     border-radius: 1.3rem;
     border-left: 8px solid var(--yellow);
-    height: 15rem;
-}
-
-.actions{
+    height: 13rem;
     position: relative;
-    bottom: 0;
-    right: 0;
 }
 
 .pjt>*{
     padding: .8rem;
+}
+
+.actions{
+    position: absolute;
+    bottom: 1%;
+    right: 1%;
+    padding: 1rem;
+}
+
+.actions>i{
+    margin-right: .6rem;
+}
+
+.right{
+    background-color: var(--grey);
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.trend{
+    grid-row: 2 / 3;
+}
+
+.list{
+    background-color: var(--white);
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.list li{
+    padding: 2rem;
+    border-bottom: 1px solid black;
 }
